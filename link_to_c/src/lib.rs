@@ -1,6 +1,7 @@
 use libc::size_t;
 
-#[link(name = "RustTestStatic", kind = "static")]
+#[cfg_attr(debug_assertions, link(name = "RustTestStatic_d", kind = "static"))]
+#[cfg_attr(not(debug_assertions), link(name = "RustTestStatic", kind = "static"))]
 extern {
     fn print_int_val(value: i32) -> size_t;
 }
