@@ -4,8 +4,6 @@
 #include <iostream>
 #include "../RustTestStatic/RustTestStatic.h"
 
-#pragma comment(lib, "RustTestStatic.lib")
-
 
 int main()
 {
