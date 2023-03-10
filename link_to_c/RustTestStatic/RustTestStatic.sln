@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RustTestStatic", "RustTestStatic\RustTestStatic.vcxproj", "{012DE3A6-7A48-4ACF-8B6E-D567A5EABC4A}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestConsole", "TestConsole\TestConsole.vcxproj", "{933D549D-0DD0-47C6-8EDC-0CA61E8F0CB7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{012DE3A6-7A48-4ACF-8B6E-D567A5EABC4A} = {012DE3A6-7A48-4ACF-8B6E-D567A5EABC4A}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
